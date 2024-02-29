@@ -123,3 +123,90 @@ img {
     padding-right: 2px;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 4px;
+
+    justify-content: center;
+}
+
+.gallery-item { 
+    max-width: 250px;
+    max-height: 250px;
+
+    margin: 5px 0;
+
+    position: relative;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+}
+.gallery-item-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 8px;
+
+    color: white;
+    font-size: 14px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gallery-item-info {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100%;
+
+    color: rgba(0, 0, 0, 0);
+}
+.gallery-item-info:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item-info ul {
+    display: flex;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+.gallery-item-info ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 10px;
+
+    font-size: 14px;
+}
+.gallery-item-info ul li:last-child {
+    margin-right: 0;
+}
+.visually-hidden {
+    display: none;
+}
+.gallery-item-info ul li i {
+    margin-right: 5px;
+}
