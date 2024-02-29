@@ -1,0 +1,125 @@
+/* Base Styles */
+:root {
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+    font-family: "Open Sans", Arial, sans-serif;
+    /* min-height: 100vh; */
+    max-width: 935px;
+
+    padding: 15px 30px;
+    padding-bottom: 3rem;
+    margin: 0 auto;
+
+    color: #262626;
+    background-color: #fafafa;
+}
+
+img {
+    display: block;
+}
+
+/* Header */
+.container {
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+
+    /* padding: ; */
+    margin-bottom: 44px;
+}
+.profile-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 40px;
+
+    height: 205px;
+    width: 290px;
+
+}
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* right side */
+.profile-content {
+    width: 100%;
+}
+
+.profile-user-settings {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.profile-user-settings h1 {
+    margin-right: 8px;
+    font-weight: normal;
+}
+.profile-user-settings button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 32px;
+    width: 126px;
+
+    margin: 0 5px;
+    padding: 7px 6px;
+
+    border: none;
+    border-radius:  6px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.199);
+
+    transition: all 350ms ease-in-out;
+}
+.profile-user-settings button:hover {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.199);
+}
+
+.profile-stats {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    padding: 10px;
+}
+.profile-stats ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+}
+.profile-stats ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+    font-size: 15px;
+
+    margin-right: 13px;
+}
+.profile-stat-count {
+    font-weight: bold;
+    padding-right: 2px;
+}
+
