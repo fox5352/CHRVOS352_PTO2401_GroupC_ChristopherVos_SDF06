@@ -220,6 +220,35 @@ img {
     margin-right: 5px;
 }
 
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 60px;
+    min-height: 30px;
+
+    /* background-color: transparent; */
+}
+.dot {
+    width: 10px;
+    height: 10px;
+
+    margin: 0 5px;
+
+    border: none;
+    border-radius: 50%;
+    background-color: black;
+
+    animation: pulse 1s infinite both linear;
+}
+.dot:nth-child(2) {
+    animation-delay: 250ms;
+}
+.dot:nth-child(3) {
+    animation-delay: 500ms;
+}
+
 /* media on 735px max */
 @media screen and (max-width: 735px) {
     body {
@@ -242,5 +271,17 @@ img {
     }
     .profile-user-settings button {
         margin-top: 10px;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100%{
+        transform: scale(1);
     }
 }
